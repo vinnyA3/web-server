@@ -2,6 +2,8 @@ var express = require('express');
 var port = 3000;
 var app = express();
 
+//middeware module exports
+var middleware = require('./middleware.js');
 //middleware
 var middleware = {
     requireAuthenication: function(req,res,next){
